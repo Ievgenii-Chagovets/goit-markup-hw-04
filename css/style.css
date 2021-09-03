@@ -108,7 +108,6 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
-  margin-right: 215px;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -121,9 +120,18 @@ ul {
   color: var(--accent-color);
 }
 .heroe {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/heroe-background.jpg);
   background-color: var(--second-title-color);
   flex-grow: 1;
   padding-bottom: 200px;
+  padding-top: 200px;
+  background-repeat: no-repeat;
+  background-size: center;
+  background-position: center;
 }
 
 .heroe-text {
@@ -135,7 +143,6 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  padding-top: 200px;
 }
 .button-section {
   font-family: "Roboto";
@@ -164,6 +171,7 @@ ul {
 .characteristics-list {
   display: flex;
 }
+
 .characteristics-item {
   width: 270px;
   height: 101px;
@@ -171,6 +179,22 @@ ul {
 .characteristics-item:not(:last-child) {
   margin-right: 30px;
 }
+.characteristics-item::before {
+  content: "";
+  display: block;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: rgba(245, 244, 250, 1);
+}
+.characteristics-item:nth-child(1)::before {
+  background-image: url(../images/antena.png);
+}
+.characteristics-item:nth-child(2)::before {
+  background-image: url(../images/clock\ 1.png);
+}
+
 .characteristics {
   font-family: "Roboto";
   font-weight: 700;

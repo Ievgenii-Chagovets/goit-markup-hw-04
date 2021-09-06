@@ -300,9 +300,9 @@ ul {
   justify-content: center;
 }
 .social-links {
-  
+  width: 70px;
+  height: 70px;
 }
-
 
 .logo-footer {
   display: flex;

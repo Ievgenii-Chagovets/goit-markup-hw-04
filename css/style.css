@@ -28,7 +28,7 @@ ul {
   text-decoration: none;
 }
 
-.body {
+body {
   font-family: "Roboto", sans-serif;
   background-color: white;
 }
@@ -94,11 +94,16 @@ ul {
 .contacts-item {
   display: flex;
 }
-.contacts-icon {
+.contacts-icon-email {
   display: flex;
-  margin: 34px 10px 34px;
+  margin-right: 10px;
+}
+.contacts-icon-phone {
+  display: flex;
+  margin-right: 10px;
 }
 .email {
+  position: relative;
   display: block;
   font-family: "Roboto";
   font-weight: 500;
@@ -240,6 +245,12 @@ ul {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.our-team-item {
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 .our-team-text {
   font-family: "Roboto";
   font-weight: 700;
@@ -262,7 +273,6 @@ ul {
 }
 .team-description {
   padding-top: 30px;
-  padding-bottom: 30px;
 }
 .our-team-item:not(:last-child) {
   margin-right: 30px;
@@ -287,9 +297,37 @@ ul {
   display: flex;
   justify-content: center;
 }
+.social-links-list {
+  display: flex;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-left: 32px;
+  padding-bottom: 30px;
+}
+.social-links-item {
+  display: flex;
+}
+.social-links-item:not(:last-child) {
+  margin-right: 10px;
+}
 .social-links {
-  width: 70px;
-  height: 70px;
+  padding: 12px 12px 12px 12px;
+  height: 44px;
+}
+.social-links:hover {
+  background-color: #2196f3;
+  border-radius: 50%;
+}
+.social-links:hover > .social-icon {
+  fill: #ffffff;
+}
+
+.social-icon {
+  fill: #afb1b8;
+}
+.social-links-insta:hover,
+.social-links-insta:focus {
+  color: #2196f3;
 }
 
 .logo-footer {
@@ -334,4 +372,48 @@ ul {
   letter-spacing: 0.03em;
   color: #ffffff;
   text-decoration: none;
+}
+.container-row {
+  display: flex;
+  flex-direction: row;
+}
+.join-in-social-links {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+  padding-top: 12px;
+}
+.join-us {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.social-icon-footer {
+  margin: 12px;
+  fill: #ffffff;
+}
+.social-link-list-footer {
+  display: flex;
+  flex-direction: row;
+}
+.social-link-item-footer {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  height: 44px;
+}
+.social-link-item-footer:not(:last-child) {
+  margin-right: 10px;
+}
+.social-link-item-footer > a {
+  height: 44px;
+  display: block;
+}
+.social-link-item-footer:hover {
+  background-color: #2196f3;
 }

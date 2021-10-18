@@ -151,6 +151,7 @@ ul {
 .button:focus {
   background-color: #2196f3;
   color: #ffffff;
+  cursor: pointer;
 }
 .project-list {
   display: flex;
@@ -164,6 +165,13 @@ ul {
   margin-bottom: 30px;
   flex-basis: calc(100% / 3 - 30px);
   border: 1px solid #eeeeee;
+}
+.project-item:hover,
+.project-item:focus {
+  box-shadow: 4px 5px 4px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 4px 5px 4px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 4px 5px 4px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 .project-discription {
   padding: 20px 24px 20px 24px;
@@ -193,9 +201,9 @@ ul {
   color: var(--second-text-color);
 }
 
-.footer-section {
-  font-family: "Roboto";
-  background-color: #2f303a;
+.logo-footer {
+  display: flex;
+  margin-bottom: 20px;
 }
 .adress-text {
   font-family: "Roboto";
@@ -205,9 +213,14 @@ ul {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: #ffffff;
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
-
+.footer-section {
+  font-family: "Roboto";
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .footer-contact {
   font-family: "Roboto";
   font-style: normal;
@@ -218,14 +231,9 @@ ul {
   color: rgba(255, 255, 255, 0.6);
 }
 .adress-item:not(:last-child) {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
-.footer-contact:not(:last-child) {
-  padding-bottom: 9px;
-}
-.adress-item:last-child {
-  padding-bottom: 60px;
-}
+
 .logo-footer {
   font-family: "Oleo Script", cursive;
   font-family: "Raleway", sans-serif;
@@ -235,7 +243,48 @@ ul {
   letter-spacing: 0.03em;
   color: #ffffff;
   text-decoration: none;
+}
+.container-row {
   display: flex;
-  padding-top: 60px;
-  padding-bottom: 20px;
+  flex-direction: row;
+}
+.join-in-social-links {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+  padding-top: 12px;
+}
+.join-us {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.social-icon-footer {
+  margin: 12px;
+  fill: #ffffff;
+}
+.social-link-list-footer {
+  display: flex;
+  flex-direction: row;
+}
+.social-link-item-footer {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  height: 44px;
+}
+.social-link-item-footer:not(:last-child) {
+  margin-right: 10px;
+}
+.social-link-item-footer > a {
+  height: 44px;
+  display: block;
+}
+.social-link-item-footer:hover {
+  background-color: #2196f3;
 }

@@ -28,7 +28,7 @@ ul {
   text-decoration: none;
 }
 
-body {
+.body {
   font-family: "Roboto", sans-serif;
   background-color: white;
 }
@@ -88,6 +88,10 @@ body {
   font-family: "Roboto";
   display: flex;
 }
+.contacts:hover,
+.contacts:focus {
+  color: var(--accent-color);
+}
 .contacts-list {
   display: flex;
 }
@@ -95,16 +99,18 @@ body {
   display: flex;
 }
 .contacts-icon-email {
-  display: flex;
+  display: inline-block;
   margin-right: 10px;
+  vertical-align: middle;
 }
 .contacts-icon-phone {
-  display: flex;
+  display: inline-block;
+  vertical-align: middle;
   margin-right: 10px;
 }
 .email {
   position: relative;
-  display: block;
+  display: flex;
   font-family: "Roboto";
   font-weight: 500;
   font-size: 14px;
@@ -116,7 +122,7 @@ body {
   padding-bottom: 32px;
 }
 .phone {
-  display: block;
+  display: flex;
   font-family: "Roboto";
   font-weight: 500;
   font-size: 14px;
@@ -133,6 +139,12 @@ body {
 .phone:hover,
 .phone:focus {
   color: var(--accent-color);
+}
+.email:hover .contacts-icon-email {
+  fill: var(--accent-color);
+}
+.phone:hover .contacts-icon-phone {
+  fill: var(--accent-color);
 }
 .heroe {
   background-image: linear-gradient(
@@ -329,7 +341,103 @@ body {
 .social-links-insta:focus {
   color: #2196f3;
 }
-
+.our-permanent-clients {
+  padding-top: 94px;
+  margin-bottom: 50px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.our-clients-list {
+  display: flex;
+  padding-bottom: 94px;
+}
+.our-clients-item {
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+}
+.our-client-icon-1 {
+  padding: 23px 65px 22px 64px;
+}
+.ya-co-company {
+  fill: #afb1b8;
+  width: 41px;
+  height: 46.7px;
+}
+.our-client-icon-2 {
+  padding: 19px 65px 21px 65px;
+}
+.tagline-here-company {
+  fill: #afb1b8;
+  width: 40px;
+  height: 52px;
+}
+.our-client-icon-3 {
+  padding: 25px 65px 26px 61px;
+}
+.company {
+  fill: #afb1b8;
+  width: 43px;
+  height: 41px;
+}
+.our-client-icon-4 {
+  padding: 25px 42px 26px 43px;
+}
+.foster-peters-company {
+  fill: #afb1b8;
+  width: 84px;
+  height: 41px;
+}
+.our-client-icon-5 {
+  padding: 23px 53px 24px 54px;
+}
+.brand-company {
+  fill: #afb1b8;
+  width: 62px;
+  height: 45px;
+}
+.our-client-icon-6 {
+  padding: 23px 38px 25px 38px;
+}
+.tag-line-company {
+  fill: #afb1b8;
+  width: 94px;
+  height: 44px;
+}
+.our-clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+.our-clients-item:hover {
+  border-color: #2196f3;
+  cursor: pointer;
+}
+.our-clients-item:hover .ya-co-company {
+  fill: #2196f3;
+}
+.our-clients-item:hover .tagline-here-company {
+  fill: #2196f3;
+}
+.our-clients-item:hover .company {
+  fill: #2196f3;
+}
+.our-clients-item:hover .foster-peters-company {
+  fill: #2196f3;
+}
+.our-clients-item:hover .brand-company {
+  fill: #2196f3;
+}
+.our-clients-item:hover .tag-line-company {
+  fill: #2196f3;
+}
 .logo-footer {
   display: flex;
   margin-bottom: 20px;

@@ -89,6 +89,10 @@ ul {
   font-family: "Roboto";
   display: flex;
 }
+.contacts:hover,
+.contacts:focus {
+  color: var(--accent-color);
+}
 .email {
   font-family: "Roboto";
   font-weight: 500;
@@ -118,6 +122,12 @@ ul {
 .phone:hover,
 .phone:focus {
   color: var(--accent-color);
+}
+.email:hover .contacts-icon-email {
+  fill: var(--accent-color);
+}
+.phone:hover .contacts-icon-phone {
+  fill: var(--accent-color);
 }
 .hero-work-example {
   padding-top: 94px;

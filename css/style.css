@@ -102,11 +102,13 @@ ul {
   display: inline-block;
   margin-right: 10px;
   vertical-align: middle;
+  fill: #757575;
 }
 .contacts-icon-phone {
   display: inline-block;
   vertical-align: middle;
   margin-right: 10px;
+  fill: #757575;
 }
 .email {
   position: relative;
@@ -143,7 +145,13 @@ ul {
 .email:hover .contacts-icon-email {
   fill: var(--accent-color);
 }
+.email:focus .contacts-icon-email {
+  fill: var(--accent-color);
+}
 .phone:hover .contacts-icon-phone {
+  fill: var(--accent-color);
+}
+.phone:focus .contacts-icon-phone {
   fill: var(--accent-color);
 }
 .heroe {
@@ -206,9 +214,12 @@ ul {
   margin-right: 30px;
 }
 .characteristics-icon {
+  display: flex;
   background-color: rgba(245, 244, 250, 1);
   margin-bottom: 30px;
-  padding: 25px 100px 25px 100px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
 }
 .characteristics {
   font-family: "Roboto";
@@ -285,6 +296,7 @@ ul {
 }
 .team-description {
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 .our-team-item:not(:last-child) {
   margin-right: 30px;
@@ -311,10 +323,9 @@ ul {
 }
 .social-links-list {
   display: flex;
-  padding-top: 16px;
+  margin-top: 16px;
   padding-right: 32px;
   padding-left: 32px;
-  padding-bottom: 30px;
 }
 .social-links-item {
   display: flex;
@@ -333,7 +344,13 @@ ul {
 .social-links:hover > .social-icon {
   fill: #ffffff;
 }
-
+.social-links:focus {
+  background-color: #2196f3;
+  border-radius: 50%;
+}
+.social-links:focus > .social-icon {
+  fill: #ffffff;
+}
 .social-icon {
   fill: #afb1b8;
 }
@@ -341,8 +358,10 @@ ul {
 .social-links-insta:focus {
   color: #2196f3;
 }
-.our-permanent-clients {
+.our-clients {
   padding-top: 94px;
+}
+.our-permanent-clients {
   margin-bottom: 50px;
   font-family: Roboto;
   font-style: normal;
@@ -438,6 +457,28 @@ ul {
 .our-clients-item:hover .tag-line-company {
   fill: #2196f3;
 }
+.our-clients-item:focus {
+  border-color: #2196f3;
+  cursor: pointer;
+}
+.our-clients-item:focus .ya-co-company {
+  fill: #2196f3;
+}
+.our-clients-item:focus .tagline-here-company {
+  fill: #2196f3;
+}
+.our-clients-item:focus .company {
+  fill: #2196f3;
+}
+.our-clients-item:focus .foster-peters-company {
+  fill: #2196f3;
+}
+.our-clients-item:focus .brand-company {
+  fill: #2196f3;
+}
+.our-clients-item:focus .tag-line-company {
+  fill: #2196f3;
+}
 .logo-footer {
   display: flex;
   margin-bottom: 20px;
@@ -524,4 +565,13 @@ ul {
 }
 .social-link-item-footer:hover {
   background-color: #2196f3;
+  border-radius: 50%;
+}
+.social-link-item-footer:focus {
+  background-color: #2196f3;
+  border-radius: 50%;
+}
+.social-link-item-footer:focus > .social-icon-footer {
+  margin: 12px;
+  fill: #ffffff;
 }

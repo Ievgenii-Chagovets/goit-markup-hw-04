@@ -301,7 +301,7 @@ ul {
   display: flex;
   flex-direction: row;
 }
-.social-link-item-footer {
+.social-link-footer {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   height: 44px;
@@ -309,10 +309,19 @@ ul {
 .social-link-item-footer:not(:last-child) {
   margin-right: 10px;
 }
-.social-link-item-footer > a {
+.social-link-footer {
   height: 44px;
   display: block;
 }
-.social-link-item-footer:hover {
+.social-link-footer:hover {
   background-color: #2196f3;
+  border-radius: 50%;
+}
+.social-link-footer:focus {
+  background-color: #2196f3;
+  border-radius: 50%;
+}
+.social-link-footer:focus .social-icon-footer {
+  margin: 12px;
+  fill: #ffffff;
 }
